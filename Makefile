@@ -11,7 +11,7 @@ prod:
 	rm -rf .terraform*
 	git pull
 	terrafile -f env-prod/Terrafile
-	terraform init -backend-config=env-dev/backend.tfvars
+	terraform init -backend-config=env-prod/backend.tfvars
 	terraform apply -auto-approve -var-file=env-dev/main.tfvars
 
 dev-destroy:
@@ -26,7 +26,7 @@ prod-destroy:
 	rm -rf .terraform*
 	git pull
 	terrafile -f env-prod/Terrafile
-	terraform init -backend-config=env-dev/backend.tfvars
+	terraform init -backend-config=env-prod/backend.tfvars
 	terraform destroy -auto-approve -var-file=env-dev/main.tfvars
 
 
