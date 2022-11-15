@@ -1,3 +1,4 @@
+
 dev:
 	rm -rf .terraform*
 	terrafile -f env-dev/Terrafile
