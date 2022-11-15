@@ -1,5 +1,5 @@
 module  "vpc"  {
-  source = ""
+  source = "github.com/nayeemm0772/tf-module-vpc"
 }
 
 variable "ver" {}
