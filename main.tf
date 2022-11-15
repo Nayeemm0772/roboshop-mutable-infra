@@ -1,3 +1,3 @@
-module  "consul"  {
+module  "vpc"  {
   source = "github.com/hashicorp/example"
 }
