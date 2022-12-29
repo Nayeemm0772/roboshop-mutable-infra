@@ -23,6 +23,7 @@ dev-destroy:
 	terraform destroy -auto-approve -var-file=env-dev/main.tfvars
 
 
+
 prod-destroy:
 	rm -rf .terraform*
 	git pull
